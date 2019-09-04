@@ -43,6 +43,8 @@ call plug#end()
 set nu
 set relativenumber
 set wildmenu
+set splitright
+set splitbelow
 
 if &diff
 	" Default show line number
