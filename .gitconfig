@@ -1,0 +1,19 @@
+[user]
+	name = Stephen Hung
+	email = stephenhung@hk01.com
+[core]
+	excludesfile = /Users/user/.gitignore_global
+	editor = /usr/bin/vim
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+	trustExitCode = true
+[alias]
+	d = difftool
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+	keepBackup = false
