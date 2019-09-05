@@ -1,3 +1,5 @@
+source ./brew.sh
+
 echo "Backing up existing files..."
 mv -iv ~/.gitconfig ~/.gitconfig.default
 mv -iv ~/.tmux.conf ~/.tmux.conf.default
