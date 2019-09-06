@@ -10,7 +10,6 @@ brew instal httpie
 brew instal hub
 brew instal mongodb
 brew instal node
-brew instal nvm
 brew instal openssl
 brew instal python
 brew instal python@2
