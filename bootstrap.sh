@@ -5,10 +5,10 @@ echo "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Backing up existing files..."
-mv -iv ~/.gitconfig ~/.gitconfig.default
-mv -iv ~/.tmux.conf ~/.tmux.conf.default
-mv -iv ~/.vimrc ~/.vimrc.default
-mv -iv ~/.zshrc ~/.zshrc.default 
+mv -ivn ~/.gitconfig ~/.gitconfig.default
+mv -ivn ~/.tmux.conf ~/.tmux.conf.default
+mv -ivn ~/.vimrc ~/.vimrc.default
+mv -ivn ~/.zshrc ~/.zshrc.default 
 
 echo "Adding symlinks..." 
 ln -sfnv $PWD/.gitconfig ~/.gitconfig
