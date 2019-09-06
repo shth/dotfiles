@@ -1,0 +1,4 @@
+# might container github oauth-token
+.config/hub
+# too large and probably not worth storing
+.config/yarn/
