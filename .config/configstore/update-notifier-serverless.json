@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1562242440976,
+	"update": {
+		"latest": "1.46.1",
+		"current": "1.28.0",
+		"type": "minor",
+		"name": "serverless"
+	}
+}

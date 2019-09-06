@@ -1,0 +1,1244 @@
+{
+	"name": "axios-mock-adapter",
+	"versions": {
+		"1.0.1": {
+			"name": "axios-mock-adapter",
+			"version": "1.0.1",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "index.js",
+			"scripts": {
+				"test": "mocha"
+			},
+			"files": [
+				"index.js"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.9.1",
+				"chai": "^3.5.0",
+				"mocha": "^2.4.5"
+			},
+			"gitHead": "193b3b7d913aba18586c75f38b9e3f05f0b2fbc8",
+			"_id": "axios-mock-adapter@1.0.1",
+			"_shasum": "3433863915bf080e8abd1d19ae959b3bd6b0a6c7",
+			"_from": ".",
+			"_npmVersion": "3.7.3",
+			"_nodeVersion": "5.9.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "3433863915bf080e8abd1d19ae959b3bd6b0a6c7",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.0.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.0.1.tgz_1458758698232_0.7549783335998654"
+			},
+			"directories": {}
+		},
+		"1.1.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.1.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "index.js",
+			"scripts": {
+				"test": "mocha",
+				"lint": "eslint index.js test"
+			},
+			"files": [
+				"index.js"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.9.1",
+				"chai": "^3.5.0",
+				"eslint": "^2.6.0",
+				"mocha": "^2.4.5"
+			},
+			"gitHead": "de06e48fed05ec630b7812e88d223300e3b8c4c1",
+			"_id": "axios-mock-adapter@1.1.0",
+			"_shasum": "41c07ef894e057bf12db6933d76c01fd0682eabb",
+			"_from": ".",
+			"_npmVersion": "3.8.3",
+			"_nodeVersion": "5.10.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "41c07ef894e057bf12db6933d76c01fd0682eabb",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.1.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.1.0.tgz_1460471961640_0.39826322300359607"
+			},
+			"directories": {}
+		},
+		"1.2.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.2.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint index.js test",
+				"build:umd": "webpack index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"index.js",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.9.1",
+				"chai": "^3.5.0",
+				"eslint": "^2.6.0",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"gitHead": "c38679fb31fe2d7a52e4fb93d6ea306592923788",
+			"_id": "axios-mock-adapter@1.2.0",
+			"_shasum": "6a85b2ac5057d0f6f943bac41556390c9af62869",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "5.10.1",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "6a85b2ac5057d0f6f943bac41556390c9af62869",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.2.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.2.0.tgz_1460632830221_0.08149340539239347"
+			},
+			"directories": {}
+		},
+		"1.3.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.3.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint index.js test",
+				"build:umd": "webpack index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"index.js",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.9.1",
+				"chai": "^3.5.0",
+				"eslint": "^2.6.0",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"gitHead": "63721f8e0e1a5bcc21f87ea5033968b69f784614",
+			"_id": "axios-mock-adapter@1.3.0",
+			"_shasum": "c0623e4f209ff3994ac2a0cfc10f7fc92418c705",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "5.10.1",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "c0623e4f209ff3994ac2a0cfc10f7fc92418c705",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.3.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.3.0.tgz_1460705207156_0.6280350456945598"
+			},
+			"directories": {}
+		},
+		"1.3.1": {
+			"name": "axios-mock-adapter",
+			"version": "1.3.1",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint index.js test",
+				"build:umd": "webpack index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"index.js",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.9.1",
+				"chai": "^3.5.0",
+				"eslint": "^2.6.0",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"gitHead": "f33ecca564b38dab6e8c4b04d5bd2e8f60db8579",
+			"_id": "axios-mock-adapter@1.3.1",
+			"_shasum": "5c3735ebf69c12fbaebf28a7e19e60610b1f9787",
+			"_from": ".",
+			"_npmVersion": "3.9.2",
+			"_nodeVersion": "6.2.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "5c3735ebf69c12fbaebf28a7e19e60610b1f9787",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.3.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.3.1.tgz_1464197155941_0.8586708514485508"
+			},
+			"directories": {}
+		},
+		"1.4.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.4.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.11.1",
+				"chai": "^3.5.0",
+				"eslint": "^2.6.0",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"gitHead": "fa98fadef8d843839e5c7252bef50cbdaa6d9eab",
+			"_id": "axios-mock-adapter@1.4.0",
+			"_shasum": "f707a5e6186e8bb9bd4636c8c4666eb314ee7c08",
+			"_from": ".",
+			"_npmVersion": "3.9.2",
+			"_nodeVersion": "6.2.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "f707a5e6186e8bb9bd4636c8c4666eb314ee7c08",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.4.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.4.0.tgz_1464648392243_0.07607963704504073"
+			},
+			"directories": {}
+		},
+		"1.5.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.5.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"devDependencies": {
+				"axios": "^0.12.0",
+				"chai": "^3.5.0",
+				"eslint": "^2.13.1",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"gitHead": "811a6a73de6bec643d64fa619fee136a0e3e841f",
+			"_id": "axios-mock-adapter@1.5.0",
+			"_shasum": "ebaf8aea88f776ee017ff66c9d1de2cc62ad86a1",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "6.2.2",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "ebaf8aea88f776ee017ff66c9d1de2cc62ad86a1",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.5.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.5.0.tgz_1467235801077_0.67583326715976"
+			},
+			"directories": {}
+		},
+		"1.6.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.6.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.13.1",
+				"chai": "^3.5.0",
+				"eslint": "^3.0.1",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"dependencies": {
+				"deep-eql": "^0.1.3"
+			},
+			"gitHead": "cc01a3e1942240c769701921148715823d61eb47",
+			"_id": "axios-mock-adapter@1.6.0",
+			"_shasum": "eea213ee7aad7f41d5d325b933500465a51eff74",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.3.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "eea213ee7aad7f41d5d325b933500465a51eff74",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.6.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.6.0.tgz_1468960896534_0.7970839226618409"
+			},
+			"directories": {}
+		},
+		"1.6.1": {
+			"name": "axios-mock-adapter",
+			"version": "1.6.1",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.13.1",
+				"chai": "^3.5.0",
+				"eslint": "^3.0.1",
+				"mocha": "^2.4.5",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.12.15"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "e8fb5d650483181f3975d4b1011d6bb2013acc92",
+			"_id": "axios-mock-adapter@1.6.1",
+			"_shasum": "dec73e6a4c0d0d7671b2d4af8e5b3d0d297334c3",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.3.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "dec73e6a4c0d0d7671b2d4af8e5b3d0d297334c3",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.6.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.6.1.tgz_1469261664672_0.3871066374704242"
+			},
+			"directories": {}
+		},
+		"1.7.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.7.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"test:coverage": "istanbul cover node_modules/.bin/_mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.15.0",
+				"chai": "^3.5.0",
+				"cross-env": "^3.0.0",
+				"eslint": "^3.7.1",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.1.2",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.13.2"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "457921fd1c5db113a86bba76d96e9ba7c3a35f1c",
+			"_id": "axios-mock-adapter@1.7.0",
+			"_shasum": "f9881bcd13d7803e9ab7831d0d16a3f4c2205564",
+			"_from": ".",
+			"_npmVersion": "3.10.7",
+			"_nodeVersion": "6.7.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "f9881bcd13d7803e9ab7831d0d16a3f4c2205564",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.7.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.7.0.tgz_1476171820992_0.145320659969002"
+			},
+			"directories": {}
+		},
+		"1.7.1": {
+			"name": "axios-mock-adapter",
+			"version": "1.7.1",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"test:coverage": "istanbul cover node_modules/.bin/_mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.15.2",
+				"chai": "^3.5.0",
+				"cross-env": "^3.1.3",
+				"eslint": "^3.8.1",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.1.2",
+				"rimraf": "^2.5.2",
+				"webpack": "^1.13.2"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "b057db893fb22cb8df40735d024dd136141ad981",
+			"_id": "axios-mock-adapter@1.7.1",
+			"_shasum": "3258b8c776e56cda94752d5502401e14444badbe",
+			"_from": ".",
+			"_npmVersion": "3.10.8",
+			"_nodeVersion": "6.9.1",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "3258b8c776e56cda94752d5502401e14444badbe",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.7.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.7.1.tgz_1477333584684_0.6171912807039917"
+			},
+			"directories": {}
+		},
+		"1.8.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.8.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"test:coverage": "istanbul cover node_modules/.bin/_mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.15.2",
+				"chai": "^3.5.0",
+				"cross-env": "^3.2.3",
+				"eslint": "^3.17.1",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.1.2",
+				"rimraf": "^2.6.1",
+				"webpack": "^2.2.1"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "cea5ce9acd6ed5637d083fd070303144a80c46af",
+			"_id": "axios-mock-adapter@1.8.0",
+			"_shasum": "fb589454e71e004b7f6fd300d07d5567bd438eb7",
+			"_from": ".",
+			"_npmVersion": "4.1.2",
+			"_nodeVersion": "7.7.1",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "fb589454e71e004b7f6fd300d07d5567bd438eb7",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.8.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.8.0.tgz_1489136714890_0.8176638251170516"
+			},
+			"directories": {}
+		},
+		"1.8.1": {
+			"name": "axios-mock-adapter",
+			"version": "1.8.1",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"test:coverage": "istanbul cover node_modules/.bin/_mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.15.2",
+				"chai": "^3.5.0",
+				"cross-env": "^3.2.3",
+				"eslint": "^3.17.1",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.1.2",
+				"rimraf": "^2.6.1",
+				"webpack": "^2.2.1"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "7cfc19cd2752005f326140163ea0569430e0ecdd",
+			"_id": "axios-mock-adapter@1.8.1",
+			"_shasum": "70085e5d70c93d5fa93e323011c4b64f02bd2ad1",
+			"_from": ".",
+			"_npmVersion": "4.1.2",
+			"_nodeVersion": "7.7.1",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "70085e5d70c93d5fa93e323011c4b64f02bd2ad1",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.8.1.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/axios-mock-adapter-1.8.1.tgz_1489182928378_0.10015638661570847"
+			},
+			"directories": {}
+		},
+		"1.9.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.9.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"test:coverage": "istanbul cover node_modules/.bin/_mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.16.2",
+				"chai": "^4.0.2",
+				"cross-env": "3.2.4",
+				"eslint": "^4.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.4.2",
+				"rimraf": "^2.6.1",
+				"webpack": "^2.6.1"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "13ce34c9f4d098ca1bbb9a409f103170b4a1eb85",
+			"_id": "axios-mock-adapter@1.9.0",
+			"_shasum": "0e387666fceaf3f91262109a3956f588bc6af2d1",
+			"_from": ".",
+			"_npmVersion": "4.6.1",
+			"_nodeVersion": "7.10.0",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "0e387666fceaf3f91262109a3956f588bc6af2d1",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.9.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/axios-mock-adapter-1.9.0.tgz_1497696108930_0.8693600483238697"
+			},
+			"directories": {}
+		},
+		"1.10.0": {
+			"name": "axios-mock-adapter",
+			"version": "1.10.0",
+			"description": "Axios adapter that allows to easily mock requests",
+			"main": "src/index.js",
+			"scripts": {
+				"clean": "rimraf dist",
+				"test": "mocha",
+				"test:coverage": "istanbul cover node_modules/.bin/_mocha",
+				"lint": "eslint src test",
+				"build:umd": "webpack src/index.js dist/axios-mock-adapter.js",
+				"build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/axios-mock-adapter.min.js",
+				"prepublish": "npm run clean && npm run build:umd && npm run build:umd:min"
+			},
+			"files": [
+				"src",
+				"dist"
+			],
+			"types": "types",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/ctimmerm/axios-mock-adapter.git"
+			},
+			"keywords": [
+				"axios",
+				"test",
+				"mock",
+				"request",
+				"stub",
+				"adapter"
+			],
+			"author": {
+				"name": "Colin Timmermans",
+				"email": "colintimmermans@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/ctimmerm/axios-mock-adapter/issues"
+			},
+			"homepage": "https://github.com/ctimmerm/axios-mock-adapter#readme",
+			"peerDependencies": {
+				"axios": ">= 0.9.0"
+			},
+			"devDependencies": {
+				"axios": "^0.17.0",
+				"chai": "^4.1.0",
+				"cross-env": "^5.1.0",
+				"eslint": "^4.3.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^4.0.1",
+				"rimraf": "^2.6.1",
+				"webpack": "^3.3.0"
+			},
+			"dependencies": {
+				"deep-equal": "^1.0.1"
+			},
+			"gitHead": "af547047408c8c969b6613ca27f0d24b2b924ea9",
+			"_id": "axios-mock-adapter@1.10.0",
+			"_shasum": "3ccee65466439a2c7567e932798fc0377d39209d",
+			"_from": ".",
+			"_npmVersion": "4.6.1",
+			"_nodeVersion": "8.8.1",
+			"_npmUser": {
+				"name": "ctimmerm",
+				"email": "colintimmermans@gmail.com"
+			},
+			"dist": {
+				"shasum": "3ccee65466439a2c7567e932798fc0377d39209d",
+				"tarball": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.10.0.tgz"
+			},
+			"maintainers": [
+				{
+					"name": "ctimmerm",
+					"email": "colintimmermans@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/axios-mock-adapter-1.10.0.tgz_1510759976786_0.9227671190164983"
+			},
+			"directories": {}
+		}
+	},
+	"dist-tags": {
+		"latest": "1.10.0"
+	},
+	"time": {
+		"modified": "2017-11-15T15:32:56.965Z",
+		"created": "2016-03-23T18:45:00.714Z",
+		"1.0.1": "2016-03-23T18:45:00.714Z",
+		"1.1.0": "2016-04-12T14:39:23.257Z",
+		"1.2.0": "2016-04-14T11:20:32.848Z",
+		"1.3.0": "2016-04-15T07:26:49.449Z",
+		"1.3.1": "2016-05-25T17:25:57.310Z",
+		"1.4.0": "2016-05-30T22:46:34.717Z",
+		"1.5.0": "2016-06-29T21:30:02.587Z",
+		"1.6.0": "2016-07-19T20:41:37.640Z",
+		"1.6.1": "2016-07-23T08:14:26.391Z",
+		"1.7.0": "2016-10-11T07:43:43.013Z",
+		"1.7.1": "2016-10-24T18:26:26.432Z",
+		"1.8.0": "2017-03-10T09:05:15.605Z",
+		"1.8.1": "2017-03-10T21:55:29.053Z",
+		"1.9.0": "2017-06-17T10:41:49.884Z",
+		"1.10.0": "2017-11-15T15:32:56.965Z"
+	},
+	"_distfiles": {
+		"axios-mock-adapter-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.0.1.tgz",
+			"sha": "3433863915bf080e8abd1d19ae959b3bd6b0a6c7",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.1.0.tgz",
+			"sha": "41c07ef894e057bf12db6933d76c01fd0682eabb",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.2.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.2.0.tgz",
+			"sha": "6a85b2ac5057d0f6f943bac41556390c9af62869",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.3.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.3.0.tgz",
+			"sha": "c0623e4f209ff3994ac2a0cfc10f7fc92418c705",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.3.1.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.3.1.tgz",
+			"sha": "5c3735ebf69c12fbaebf28a7e19e60610b1f9787",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.4.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.4.0.tgz",
+			"sha": "f707a5e6186e8bb9bd4636c8c4666eb314ee7c08",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.5.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.5.0.tgz",
+			"sha": "ebaf8aea88f776ee017ff66c9d1de2cc62ad86a1",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.6.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.6.0.tgz",
+			"sha": "eea213ee7aad7f41d5d325b933500465a51eff74",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.6.1.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.6.1.tgz",
+			"sha": "dec73e6a4c0d0d7671b2d4af8e5b3d0d297334c3",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.7.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.7.0.tgz",
+			"sha": "f9881bcd13d7803e9ab7831d0d16a3f4c2205564",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.7.1.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.7.1.tgz",
+			"sha": "3258b8c776e56cda94752d5502401e14444badbe",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.8.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.8.0.tgz",
+			"sha": "fb589454e71e004b7f6fd300d07d5567bd438eb7",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.8.1.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.8.1.tgz",
+			"sha": "70085e5d70c93d5fa93e323011c4b64f02bd2ad1",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.9.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.9.0.tgz",
+			"sha": "0e387666fceaf3f91262109a3956f588bc6af2d1",
+			"registry": "npmjs"
+		},
+		"axios-mock-adapter-1.10.0.tgz": {
+			"url": "https://registry.npmjs.org/axios-mock-adapter/-/axios-mock-adapter-1.10.0.tgz",
+			"sha": "3ccee65466439a2c7567e932798fc0377d39209d",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "\"5a0c5e28-81f7\"",
+			"fetched": 1513048745350
+		}
+	},
+	"_rev": "1-8c8a99dd7b0e3c31",
+	"readme": "# axios-mock-adapter\n\n[![Build Status](https://travis-ci.org/ctimmerm/axios-mock-adapter.svg?branch=master)](https://travis-ci.org/ctimmerm/axios-mock-adapter)\n[![devDependency Status](https://david-dm.org/ctimmerm/axios-mock-adapter/dev-status.svg)](https://david-dm.org/ctimmerm/axios-mock-adapter#info=devDependencies)\n\nAxios adapter that allows to easily mock requests\n\n## Installation\n\nUsing npm:\n\n`$ npm install axios-mock-adapter --save-dev`\n\nIt's also available as a UMD build:\n\n* https://unpkg.com/axios-mock-adapter/dist/axios-mock-adapter.js\n* https://unpkg.com/axios-mock-adapter/dist/axios-mock-adapter.min.js\n\naxios-mock-adapter works on Node as well as in a browser, it works with axios v0.9.0 and above.\n\n## Example\n\nMocking a `GET` request\n\n```js\nvar axios = require('axios');\nvar MockAdapter = require('axios-mock-adapter');\n\n// This sets the mock adapter on the default instance\nvar mock = new MockAdapter(axios);\n\n// Mock any GET request to /users\n// arguments for reply are (status, data, headers)\nmock.onGet('/users').reply(200, {\n  users: [\n    { id: 1, name: 'John Smith' }\n  ]\n});\n\naxios.get('/users')\n  .then(function(response) {\n    console.log(response.data);\n  });\n```\n\nMocking a `GET` request with specific parameters\n\n```js\nvar axios = require('axios');\nvar MockAdapter = require('axios-mock-adapter');\n\n// This sets the mock adapter on the default instance\nvar mock = new MockAdapter(axios);\n\n// Mock any GET request to /users\n// arguments for reply are (status, data, headers)\nmock.onGet('/users', { params: { searchText: 'John' } }).reply(200, {\n  users: [\n    { id: 1, name: 'John Smith' }\n  ]\n});\n\naxios.get('/users', { params: { searchText: 'John' } } )\n  .then(function(response) {\n    console.log(response.data);\n  });\n```\n\nTo add a delay to responses, specify a delay amount (in milliseconds) when instantiating the adapter\n\n```js\n// All requests using this instance will have a 2 seconds delay:\nvar mock = new MockAdapter(axiosInstance, { delayResponse: 2000 });\n```\n\nYou can restore the original adapter (which will remove the mocking behavior)\n\n```js\nmock.restore();\n```\n\nYou can also reset the registered mock handlers with `reset`\n\n```js\nmock.reset();\n```\n\n`reset` is different from `restore` in that `restore` removes the mocking from the axios instance completely,\nwhereas `reset` only removes all mock handlers that were added with onGet, onPost, etc. but leaves the mocking in place.\n\nMock a low level network error\n\n```js\n// Returns a failed promise with Error('Network Error');\nmock.onGet('/users').networkError();\n```\n\nMock a network timeout\n\n```js\n// Returns a failed promise with Error with code set to 'ECONNABORTED'\nmock.onGet('/users').timeout();\n```\n\nPassing a function to `reply`\n\n```js\nmock.onGet('/users').reply(function(config) {\n  // `config` is the axios config and contains things like the url\n\n  // return an array in the form of [status, data, headers]\n  return [200, {\n    users: [\n      { id: 1, name: 'John Smith' }\n    ]\n  }];\n});\n```\n\nUsing a regex\n\n```js\nmock.onGet(/\\/users\\/\\d+/).reply(function(config) {\n  // the actual id can be grabbed from config.url\n\n  return [200, {}];\n});\n```\n\nSpecify no path to match by verb alone\n\n```js\n// Reject all POST requests with HTTP 500\nmock.onPost().reply(500);\n```\n\nChaining is also supported\n\n```js\nmock\n  .onGet('/users').reply(200, users)\n  .onGet('/posts').reply(200, posts);\n```\n\n`.replyOnce()` can be used to let the mock only reply once\n\n```js\nmock\n  .onGet('/users').replyOnce(200, users) // After the first request to /users, this handler is removed\n  .onGet('/users').replyOnce(500);       // The second request to /users will have status code 500\n                                         // Any following request would return a 404 since there are\n                                         // no matching handlers left\n```\n\nMocking any request to a given url\n\n```js\n// mocks GET, POST, ... requests to /foo\nmock.onAny('/foo').reply(200);\n```\n\n`.onAny` can be useful when you want to test for a specific order of requests\n\n```js\n// Expected order of requests:\nconst responses = [\n  ['GET',  '/foo', 200, { foo: 'bar' }],\n  ['POST', '/bar', 200],\n  ['PUT',  '/baz', 200]\n];\n\n// Match ALL requests\nmock.onAny().reply(config => {\n  const [method, url, ...response] = responses.shift();\n  if (config.url === url && config.method.toUpperCase() === method) return response;\n  // Unexpected request, error out\n  return [500, {}];\n});\n```\n\nRequests that do not map to a mock handler are rejected with a HTTP 404 response. Since\nhandlers are matched in order, a final `onAny()` can be used to change the default\nbehaviour\n\n```js\n // Mock GET requests to /foo, reject all others with HTTP 500\nmock\n  .onGet('/foo').reply(200)\n  .onAny().reply(500);\n```\n\nMocking a request with a specific request body/data\n\n```js\nmock.onPut('/product', { id: 4, name: 'foo' }).reply(204);\n```\n\n`.passThrough()` forwards the matched request over network\n\n```js\n// Mock POST requests to /api with HTTP 201, but forward\n// GET requests to server\nmock\n  .onPost(/\\/^api/).reply(201)\n  .onGet(/\\/^api/).passThrough();\n```\n\nRecall that the order of handlers is significant\n\n```js\n// Mock specific requests, but let unmatched ones through\nmock\n  .onGet('/foo').reply(200)\n  .onPut('/bar', { xyz: 'abc' }).reply(204)\n  .onAny().passThrough();\n```\n\nNote that `passThrough` requests are not subject to delaying by `delayResponse`.\n\nAs of 1.7.0, `reply` function may return a Promise:\n\n```js\nmock.onGet('/product').reply(function(config) {\n  return new Promise(function(resolve, reject) {\n    setTimeout(function() {\n      if (Math.random() > 0.1) {\n        resolve([200, { id: 4, name: 'foo' } ]);\n      } else {\n        // reject() reason will be passed as-is.\n        // Use HTTP error status code to simulate server failure.\n        resolve([500, { success: false } ]);\n      }\n    }, 1000);\n  });\n});\n```\n\nComposing from multiple sources with Promises:\n\n```js\nvar normalAxios = axios.create();\nvar mockAxios = axios.create();\nvar mock = MockAdapter(mockAxios);\n\nmock\n  .onGet('/orders')\n  .reply(() => Promise.all([\n      normalAxios\n        .get('/api/v1/orders')\n        .then(resp => resp.data),\n      normalAxios\n        .get('/api/v2/orders')\n        .then(resp => resp.data),\n      { id: '-1', content: 'extra row 1' },\n      { id: '-2', content: 'extra row 2' }\n    ]).then(\n      sources => [200, sources.reduce((agg, source) => agg.concat(source))]\n    )\n  );\n```\n"
+}

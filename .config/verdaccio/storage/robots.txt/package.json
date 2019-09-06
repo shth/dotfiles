@@ -1,0 +1,251 @@
+{
+	"name": "robots.txt",
+	"versions": {
+		"0.1.0": {
+			"name": "robots.txt",
+			"version": "0.1.0",
+			"description": "robots.txt middleware for express/connect to server up your robots.txt",
+			"main": "index.js",
+			"scripts": {
+				"lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js",
+				"pretest": "npm run-script lint",
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"prepublish": "npm prune"
+			},
+			"author": {
+				"name": "Tom Gallacher"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"jshint-full-path": "~0.1.0"
+			},
+			"_id": "robots.txt@0.1.0",
+			"dist": {
+				"shasum": "68c7075d539d15a5e4c5323e0bb54bca2f1a3575",
+				"tarball": "https://registry.npmjs.org/robots.txt/-/robots.txt-0.1.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "tomgco",
+				"email": "tomgallacher23@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "tomgco",
+					"email": "tomgallacher23@gmail.com"
+				}
+			],
+			"directories": {}
+		},
+		"0.2.0": {
+			"name": "robots.txt",
+			"version": "0.2.0",
+			"description": "robots.txt middleware for express/connect to server up your robots.txt",
+			"main": "index.js",
+			"scripts": {
+				"lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js",
+				"pretest": "npm run-script lint",
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"prepublish": "npm prune"
+			},
+			"author": {
+				"name": "Tom Gallacher"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"jshint-full-path": "~0.1.0"
+			},
+			"_id": "robots.txt@0.2.0",
+			"dist": {
+				"shasum": "fa1f59ea1840641c479156429cdb2de0ddbf8b97",
+				"tarball": "https://registry.npmjs.org/robots.txt/-/robots.txt-0.2.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "tomgco",
+				"email": "tomgallacher23@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "tomgco",
+					"email": "tomgallacher23@gmail.com"
+				}
+			],
+			"directories": {}
+		},
+		"0.3.1": {
+			"name": "robots.txt",
+			"version": "0.3.1",
+			"description": "robots.txt middleware for express/connect to server up your robots.txt",
+			"main": "index.js",
+			"scripts": {
+				"lint": "./node_modules/.bin/jshint . --reporter=./node_modules/jshint-full-path/index.js",
+				"pretest": "npm run-script lint",
+				"test": "echo \"Error: no test specified\" && exit 1",
+				"prepublish": "npm prune"
+			},
+			"author": {
+				"name": "Tom Gallacher"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"jshint-full-path": "~0.1.0"
+			},
+			"_id": "robots.txt@0.3.1",
+			"dist": {
+				"shasum": "3882d479daa770405f321c872f52e7860d5a4847",
+				"tarball": "https://registry.npmjs.org/robots.txt/-/robots.txt-0.3.1.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.8",
+			"_npmUser": {
+				"name": "tomgco",
+				"email": "tomgallacher23@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "tomgco",
+					"email": "tomgallacher23@gmail.com"
+				}
+			],
+			"directories": {}
+		},
+		"1.0.0": {
+			"name": "robots.txt",
+			"version": "1.0.0",
+			"description": "robots.txt middleware for express/connect to server up your robots.txt",
+			"main": "index.js",
+			"publishConfig": {
+				"registry": "http://registry.npmjs.org/"
+			},
+			"scripts": {
+				"lint": "jshint . --reporter=./node_modules/jshint-full-path/index.js",
+				"pretest": "npm run-script lint",
+				"test": "istanbul test ./node_modules/.bin/_mocha -- -R spec",
+				"prepublish": "npm prune"
+			},
+			"author": {
+				"name": "Tom Gallacher"
+			},
+			"license": "New BSD",
+			"devDependencies": {
+				"jshint-full-path": "~0.1.0",
+				"mocha": "^1.18.2",
+				"istanbul": "^0.2.7"
+			},
+			"_id": "robots.txt@1.0.0",
+			"dist": {
+				"shasum": "387186e3371e85b08bde266e351f9e07299a5b7d",
+				"tarball": "https://registry.npmjs.org/robots.txt/-/robots.txt-1.0.0.tgz"
+			},
+			"_from": ".",
+			"_npmVersion": "1.4.6",
+			"_npmUser": {
+				"name": "tomgco",
+				"email": "tomgallacher23@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "tomgco",
+					"email": "tomgallacher23@gmail.com"
+				}
+			],
+			"directories": {}
+		},
+		"1.1.0": {
+			"name": "robots.txt",
+			"version": "1.1.0",
+			"description": "robots.txt middleware for express/connect to server up your robots.txt",
+			"main": "index.js",
+			"publishConfig": {
+				"registry": "http://registry.npmjs.org/"
+			},
+			"scripts": {
+				"lint": "jshint . --reporter=./node_modules/jshint-full-path/index.js",
+				"pretest": "npm run-script lint",
+				"test": "istanbul test ./node_modules/.bin/_mocha -- -R spec",
+				"prepublish": "npm prune"
+			},
+			"author": {
+				"name": "Tom Gallacher"
+			},
+			"license": "New BSD",
+			"devDependencies": {
+				"istanbul": "^0.2.7",
+				"jshint": "2.5.6",
+				"jshint-full-path": "~0.1.0",
+				"mocha": "^1.18.2"
+			},
+			"gitHead": "6b6ead4b15755052a84214e534a7f2dea6d9f39d",
+			"_id": "robots.txt@1.1.0",
+			"_shasum": "13f73331fe6eab40c4c347d6be8b49255ddc9f46",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "tomgco",
+				"email": "tomgallacher23@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "tomgco",
+					"email": "tomgallacher23@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "13f73331fe6eab40c4c347d6be8b49255ddc9f46",
+				"tarball": "https://registry.npmjs.org/robots.txt/-/robots.txt-1.1.0.tgz"
+			},
+			"directories": {}
+		}
+	},
+	"dist-tags": {
+		"latest": "1.1.0"
+	},
+	"time": {
+		"modified": "2017-06-24T17:11:15.336Z",
+		"created": "2013-11-22T11:48:50.722Z",
+		"0.1.0": "2013-11-22T11:48:53.295Z",
+		"0.2.0": "2013-11-22T12:01:32.483Z",
+		"0.3.1": "2013-11-22T13:16:39.816Z",
+		"1.0.0": "2014-04-03T16:46:29.522Z",
+		"1.1.0": "2014-10-09T16:41:02.662Z"
+	},
+	"_distfiles": {
+		"robots.txt-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/robots.txt/-/robots.txt-0.1.0.tgz",
+			"sha": "68c7075d539d15a5e4c5323e0bb54bca2f1a3575",
+			"registry": "npmjs"
+		},
+		"robots.txt-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/robots.txt/-/robots.txt-0.2.0.tgz",
+			"sha": "fa1f59ea1840641c479156429cdb2de0ddbf8b97",
+			"registry": "npmjs"
+		},
+		"robots.txt-0.3.1.tgz": {
+			"url": "https://registry.npmjs.org/robots.txt/-/robots.txt-0.3.1.tgz",
+			"sha": "3882d479daa770405f321c872f52e7860d5a4847",
+			"registry": "npmjs"
+		},
+		"robots.txt-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/robots.txt/-/robots.txt-1.0.0.tgz",
+			"sha": "387186e3371e85b08bde266e351f9e07299a5b7d",
+			"registry": "npmjs"
+		},
+		"robots.txt-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/robots.txt/-/robots.txt-1.1.0.tgz",
+			"sha": "13f73331fe6eab40c4c347d6be8b49255ddc9f46",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "\"594e9d33-178d\"",
+			"fetched": 1513044673388
+		}
+	},
+	"_rev": "2-239985cc2aebcb8b",
+	"readme": "## Robots.txt\n\nPass in the location of your `robots.txt` file on the file system, and this module\nwill return you a piece of Connect/Express middleware that will serve it at `GET /robots.txt`.\n\nThis makes one *synchronous* call to read the file upon start up, then reads it from memory\nfor every request. If you gave the wrong path, you will know about it at startup. Cache headers\nare set for you.\n\n## Installation\n\n    npm install --save robots.txt\n\n## Usage\n\n    var robots = require('robots.txt')\n\n    // Pass in the absolute path to your robots.txt file\n    app.use(robots(__dirname + '/robots.txt'))\n\n## Credits\nBuilt by [Tom Gallacher](http://twitter.com/tomgco) and [Ben Gourley](https://github.com/bengourley)\n\n## Licence\nLicensed under the [New BSD License](http://opensource.org/licenses/bsd-license.php)\n"
+}

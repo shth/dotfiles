@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1526547686549,
+	"update": {
+		"latest": "10.1.7",
+		"current": "9.6.13",
+		"type": "major",
+		"name": "poi"
+	}
+}

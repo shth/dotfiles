@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1560330711758,
+	"update": {
+		"latest": "6.1.2",
+		"current": "6.0.2",
+		"type": "minor",
+		"name": "patch-package"
+	}
+}

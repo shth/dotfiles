@@ -1,0 +1,55 @@
+{
+	"name": "@hk01-digital/api-client-legacy",
+	"versions": {
+		"0.0.1": {
+			"name": "@hk01-digital/api-client-legacy",
+			"version": "0.0.1",
+			"description": "API client for legacy API",
+			"main": "index.js",
+			"scripts": {
+				"test": "jest --coverage",
+				"test-debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
+			},
+			"author": "",
+			"license": "ISC",
+			"devDependencies": {
+				"jest": "^21.2.1",
+				"nock": "^9.0.25"
+			},
+			"dependencies": {
+				"assert": "^1.4.1",
+				"axios": "^0.17.0",
+				"axios-mock-adapter": "^1.9.0",
+				"lodash": "^4.17.4",
+				"url-join": "^2.0.2"
+			},
+			"_id": "@hk01-digital/api-client-legacy@0.0.1",
+			"_npmVersion": "5.4.2",
+			"_nodeVersion": "8.8.0",
+			"_npmUser": {},
+			"dist": {
+				"integrity": "sha512-atVznG8PapJJVbGUpPokBznCcz9UoBsEuRQIwNjRSPcWUcwe0xCCw1MVFOk7fvzpp5e3w6dYPg3v9/vd4KOCVw==",
+				"shasum": "124873566f99c8938b9f1653e915ecbecbfac4c1",
+				"tarball": "http://localhost:4873/@hk01-digital/api-client-legacy/-/@hk01-digital/api-client-legacy-0.0.1.tgz"
+			}
+		}
+	},
+	"dist-tags": {
+		"latest": "0.0.1"
+	},
+	"time": {
+		"modified": "2017-12-12T02:18:08.431Z",
+		"created": "2017-12-12T02:18:08.431Z",
+		"0.0.1": "2017-12-12T02:18:08.431Z"
+	},
+	"_distfiles": {},
+	"_attachments": {
+		"api-client-legacy-0.0.1.tgz": {
+			"shasum": "124873566f99c8938b9f1653e915ecbecbfac4c1",
+			"version": "0.0.1"
+		}
+	},
+	"_uplinks": {},
+	"_rev": "6-7dfbb41b8712ca2e",
+	"readme": "ERROR: No README data found!"
+}
