@@ -29,6 +29,14 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-plug (https://github.com/junegunn/vim-plug)
 " Plugins will be downloaded under the specified directory.
+" Automatically install vim-plug if not installed
+" ref: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
