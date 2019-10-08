@@ -1,17 +1,14 @@
 # If you come from bash you might have to change your $PATH.
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 ### PATH ###
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/user/.oh-my-zsh
-
-# path for rabbitmq
-export PATH=$PATH:/usr/local/sbin
+export ZSH=~/.oh-my-zsh
 
 # path for yarn globals
-export PATH="$(yarn global bin):$PATH"
+# export PATH="$(yarn global bin):$PATH"
 
 export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 
@@ -20,8 +17,7 @@ export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="agnoster"
-ZSH_THEME="spaceship"
+ZSH_THEME="amuse"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -57,7 +53,7 @@ ZSH_THEME="spaceship"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -135,8 +131,8 @@ setopt extendedglob
 export REACT_EDITOR=code
 
 # android studio
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_192`
-export ANDROID_HOME=/usr/local/opt/android-sdk
+# export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_192`
+# export ANDROID_HOME=/usr/local/opt/android-sdk
 
 #nvm
 export NVM_DIR="$HOME/.nvm"
