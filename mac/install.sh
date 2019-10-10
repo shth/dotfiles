@@ -1,6 +1,7 @@
 # use this mapping to google what each package does
 # map <leader>g :!chrome-cli open "https://www.google.com/search?q=<C-R><C-W> github"<CR>
 
+
 brew update && brew upgrade
 
 brew install awscli
@@ -19,7 +20,12 @@ brew install tmux
 brew install vim
 brew install yarn
 brew install zsh
+brew install emacs
+brew linkapp emacs
 
+
+echo "Installing dircolors"
+git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized
 # oh-my-zsh
 echo "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
