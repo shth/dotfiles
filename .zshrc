@@ -15,6 +15,9 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 
+# x server for vim to access system clipboard under wsl
+export DISPLAY=localhost:0.0
+
 ######
 
 # Set name of the theme to load. Optionally, if you set this to "random"
