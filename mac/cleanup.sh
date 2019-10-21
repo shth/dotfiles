@@ -6,3 +6,4 @@ mv -iv ~/.zshrc.default ~/.zshrc
 rm -rf ~/.config
 rsync -av ~/.config.default/ ~/.config/
 rm -rf ~/.config.default
+rm -iv ~/dircolors.256dark

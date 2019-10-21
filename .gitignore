@@ -2,3 +2,5 @@
 .config/hub
 # too large and probably not worth storing
 .config/yarn/
+# for containing files from git clone
+libraries/

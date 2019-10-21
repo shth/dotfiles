@@ -30,6 +30,7 @@ ZSH_THEME="amuse"
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+eval `dircolors ~/dircolors.256dark`
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
