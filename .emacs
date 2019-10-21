@@ -44,10 +44,13 @@
 
 ;; Evil-org
 ;; ref: https://github.com/Somelauw/evil-org-mode
-(add-to-list 'load-path "~/.emacs.d/plugins/evil-org")
-(require 'evil-org)
-(add-hook 'org-mode-hook 'evil-org-mode)
-(evil-org-set-key-theme '(navigation insert textobjects additional calendar))
-(require 'evil-org-agenda)
-(evil-org-agenda-set-keys)
+;; (add-to-list 'load-path "~/.emacs.d/plugins/evil-org")
+;; (require 'evil-org)
+;; (add-hook 'org-mode-hook 'evil-org-mode)
+;; (evil-org-set-key-theme '(navigation insert textobjects additional calendar))
+;; (require 'evil-org-agenda)
+;; (evil-org-agenda-set-keys)
 
+;; add timestamp for TODO items
+;; ref: https://orgmode.org/manual/Closing-items.html
+(setq org-log-done 'note)
