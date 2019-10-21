@@ -58,3 +58,11 @@ if &diff
 	:map Q :qa<Esc>
 else
 endif
+
+" Change cursor shape in different mode
+" ref: https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
+" this first one works, according to here: 
+" https://github.com/microsoft/terminal/issues/68#issuecomment-418438517
+let &t_SI.="\e[5 q"
+let &t_SR.="\e[4 q"
+let &t_EI.="\e[1 q"
