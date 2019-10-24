@@ -32,9 +32,22 @@
 ;; (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 ;; The above is the default in recent emacsen
 
+
 ;; Make TAB work in org mode (should come before (require 'evil))
 ;; ref: https://github.com/Somelauw/evil-org-mode
 (setq evil-want-C-i-jump nil)
+
+;; add timestamp for TODO items
+;; ref: https://orgmode.org/manual/Closing-items.html
+(setq org-log-done 'note)
+;; custom key maps from:
+;; https://orgmode.org/manual/Activation.html#Activation
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+
+(setq org-directory "~/org-mode")
+(setq org-default-notes-file (concat org-directory "/notes.org"))
 
 ;; Evil mode
 ;; ref: https://github.com/emacs-evil/evil#install
@@ -50,7 +63,3 @@
 ;; (evil-org-set-key-theme '(navigation insert textobjects additional calendar))
 ;; (require 'evil-org-agenda)
 ;; (evil-org-agenda-set-keys)
-
-;; add timestamp for TODO items
-;; ref: https://orgmode.org/manual/Closing-items.html
-(setq org-log-done 'note)
