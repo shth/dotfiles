@@ -48,6 +48,13 @@
 
 (setq org-directory "~/org-mode")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
+;; make org-goto use completion
+;; ref: https://emacs.stackexchange.com/questions/32617/how-to-jump-directly-to-an-org-headline/32638
+(setq org-goto-interface 'outline-path-completion)
+;; make org-goto completion show full paths
+;; ref: https://emacs.stackexchange.com/questions/32617/how-to-jump-directly-to-an-org-headline/32638
+(setq org-outline-path-complete-in-steps nil)
+
 
 ;; Evil mode
 ;; ref: https://github.com/emacs-evil/evil#install
