@@ -24,6 +24,12 @@
       kept-old-versions 2      ; how many versions from the first one are kept 
       ; https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup-Names.html#Backup-Names
       version-control t)       ; use versioned backups
+;; setup chrome browser for opening links
+;; require BROWSER environment variable to work
+;; ref: https://stackoverflow.com/questions/25261200/no-usable-browser-found-error-when-using-emacs-to-browse-hyperspec/25261294#25261294
+(setq browse-url-generic-program 
+     (executable-find (getenv "BROWSER"))
+      browse-url-browser-function 'browse-url-generic)
 
 ;;;;Org mode configuration
 ;; Enable Org mode
