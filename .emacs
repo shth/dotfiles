@@ -45,7 +45,10 @@
 
 ;; add timestamp for TODO items
 ;; ref: https://orgmode.org/manual/Closing-items.html
-(setq org-log-done 'note)
+;; (setq org-log-done 'note)
+(setq org-use-fast-todo-selection t)
+(setq org-todo-keywords
+            '((sequence "TODO" "IN_PROGRESS(!/@)" "BLOCKED(b@/!)" "|" "DONE(d@)" "CANCELED(c@)")))
 ;; custom key maps from:
 ;; https://orgmode.org/manual/Activation.html#Activation
 (global-set-key (kbd "C-c l") 'org-store-link)
