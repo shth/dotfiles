@@ -15,6 +15,7 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 
+export BROWSER=$(which google-chrome)
 ######
 
 # Set name of the theme to load. Optionally, if you set this to "random"
