@@ -1,9 +1,5 @@
 source $PWD/mac/install.sh
 
-echo "Installing Emacs, evil, evil-org"
-mkdir -p ~/.emacs.d/plugins; git clone https://github.com/somelauw/evil-org.git ~/.emacs.d/plugins/evil-org
-git clone https://github.com/emacs-evil/evil ~/.emacs.d/evil
-
 echo "Backing up existing files..."
 mv -ivn ~/.gitconfig ~/.gitconfig.default
 mv -ivn ~/.tmux.conf ~/.tmux.conf.default

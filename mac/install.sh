@@ -23,6 +23,9 @@ brew install zsh
 brew install emacs
 brew linkapp emacs
 
+echo "Installing Emacs, evil, evil-org"
+mkdir -p ~/.emacs.d/plugins; git clone https://github.com/somelauw/evil-org.git ~/.emacs.d/plugins/evil-org
+git clone https://github.com/emacs-evil/evil ~/.emacs.d/evil
 
 echo "Installing dircolors"
 git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized

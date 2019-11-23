@@ -23,6 +23,8 @@ sudo apt install vim-gtk
 
 sudo apt install zsh
 
+sudo snap install emacs --classic
+
 # oh-my-zsh
 echo "Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
