@@ -1,11 +1,5 @@
 source $PWD/mac/install.sh
 
-echo "Installing TPM(tmux package manager)"
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-echo "Installing dircolors"
-git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized
-
 echo "Installing Emacs, evil, evil-org"
 mkdir -p ~/.emacs.d/plugins; git clone https://github.com/somelauw/evil-org.git ~/.emacs.d/plugins/evil-org
 git clone https://github.com/emacs-evil/evil ~/.emacs.d/evil
