@@ -19,3 +19,14 @@ brew install tmux
 brew install vim
 brew install yarn
 brew install zsh
+
+# oh-my-zsh
+echo "Installing oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Installing TPM(tmux package manager)"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+echo "Installing dircolors"
+git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized
+

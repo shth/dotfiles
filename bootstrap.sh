@@ -1,14 +1,4 @@
-source ./brew.sh
-
-# oh-my-zsh
-echo "Installing oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-echo "Installing TPM(tmux package manager)"
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-echo "Installing dircolors"
-git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized
+source ./install.sh
 
 echo "Backing up existing files..."
 mv -ivn ~/.gitconfig ~/.gitconfig.default
