@@ -1,4 +1,4 @@
-source ./install.sh
+source $PWD/ubuntu/install.sh
 
 echo "Backing up existing files..."
 mv -ivn ~/.gitconfig ~/.gitconfig.default
@@ -7,7 +7,7 @@ mv -ivn ~/.vimrc ~/.vimrc.default
 mv -ivn ~/.zshrc ~/.zshrc.default 
 
 echo "Adding symlinks..." 
-ln -sfnv ../.gitconfig ~/.gitconfig
-ln -sfnv ../.tmux.conf ~/.tmux.conf
-ln -sfnv ../.vimrc ~/.vimrc
-ln -sfnv ../.zshrc ~/.zshrc
+ln -sfnv $PWD/.gitconfig ~/.gitconfig
+ln -sfnv $PWD/.tmux.conf ~/.tmux.conf
+ln -sfnv $PWD/.vimrc ~/.vimrc
+ln -sfnv $PWD/.zshrc ~/.zshrc
