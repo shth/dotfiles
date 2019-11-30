@@ -33,6 +33,15 @@ sudo snap install emacs --classic
 mkdir -p ~/.emacs.d/plugins; git clone https://github.com/somelauw/evil-org.git ~/.emacs.d/plugins/evil-org
 git clone https://github.com/emacs-evil/evil ~/.emacs.d/evil
 
+echo "Installing TPM(tmux package manager)"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+echo "Installing dircolors"
+git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized
+
+echo "Linking dircolors"
+ln -sfnv $PWD/libraries/dircolors-solarized/dircolors.256dark ~/.dir_colors
+
 echo "Installing neotree"
 git clone https://github.com/jaypei/emacs-neotree.git ~/.emacs.d/plugin/neotree
 
