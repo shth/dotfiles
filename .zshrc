@@ -16,8 +16,10 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 
 export BROWSER=$(which google-chrome)
-# x server for vim to access system clipboard under wsl
-export DISPLAY=localhost:0.0
+
+# setting DISPLAY variable so that commands like google-chrome works
+# ref: https://stackoverflow.com/questions/20947681/understanding-linux-display-variable
+export DISPLAY=:0
 
 ######
 
