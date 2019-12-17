@@ -30,3 +30,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "Installing dircolors"
 git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors-solarized
 
+echo "Installing fzf"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
