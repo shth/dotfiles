@@ -4,3 +4,5 @@
 .config/yarn/
 # for containing files from git clone
 libraries/
+# constantly updates
+.config/configstore/update-notifier-npm.json
