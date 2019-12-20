@@ -55,6 +55,10 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
+;; active clean view on start up
+;; https://www.evernote.com/u/0/client/web#?b=6227f2ba-1da1-4043-bea0-9a26361824e1&n=32979271-2279-4498-968b-4b7d2bd8fd2d&s=s500&search=v4&
+(setq org-startup-indented t)
+
 (setq org-directory "~/org-mode")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 ;; make org-goto use completion
