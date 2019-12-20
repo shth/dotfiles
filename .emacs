@@ -79,3 +79,19 @@
 ;; (evil-org-set-key-theme '(navigation insert textobjects additional calendar))
 ;; (require 'evil-org-agenda)
 ;; (evil-org-agenda-set-keys)
+
+;; neotree
+(add-to-list 'load-path "~/.emacs.d/plugins/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+;; override evil bindings for neotree
+(evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
+(evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
+(evil-define-key 'normal neotree-mode-map (kbd "q") 'neotree-hide)
+(evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
+(evil-define-key 'normal neotree-mode-map (kbd "g") 'neotree-refresh)
+(evil-define-key 'normal neotree-mode-map (kbd "n") 'neotree-next-line)
+(evil-define-key 'normal neotree-mode-map (kbd "p") 'neotree-previous-line)
+(evil-define-key 'normal neotree-mode-map (kbd "A") 'neotree-stretch-toggle)
+(evil-define-key 'normal neotree-mode-map (kbd "H") 'neotree-hidden-file-toggle)
