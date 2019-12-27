@@ -33,6 +33,9 @@ sudo snap install emacs --classic
 mkdir -p ~/.emacs.d/plugins; git clone https://github.com/somelauw/evil-org.git ~/.emacs.d/plugins/evil-org
 git clone https://github.com/emacs-evil/evil ~/.emacs.d/evil
 
+echo "Installing neotree"
+git clone https://github.com/jaypei/emacs-neotree.git ~/.emacs.d/plugin/neotree
+
 echo "Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install

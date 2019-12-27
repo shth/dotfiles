@@ -55,6 +55,10 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 
+;; active clean view on start up
+;; https://www.evernote.com/u/0/client/web#?b=6227f2ba-1da1-4043-bea0-9a26361824e1&n=32979271-2279-4498-968b-4b7d2bd8fd2d&s=s500&search=v4&
+(setq org-startup-indented t)
+
 (setq org-directory "~/org-mode")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 ;; make org-goto use completion
@@ -79,3 +83,19 @@
 ;; (evil-org-set-key-theme '(navigation insert textobjects additional calendar))
 ;; (require 'evil-org-agenda)
 ;; (evil-org-agenda-set-keys)
+
+;; neotree
+(add-to-list 'load-path "~/.emacs.d/plugins/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+;; override evil bindings for neotree
+(evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
+(evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
+(evil-define-key 'normal neotree-mode-map (kbd "q") 'neotree-hide)
+(evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
+(evil-define-key 'normal neotree-mode-map (kbd "g") 'neotree-refresh)
+(evil-define-key 'normal neotree-mode-map (kbd "n") 'neotree-next-line)
+(evil-define-key 'normal neotree-mode-map (kbd "p") 'neotree-previous-line)
+(evil-define-key 'normal neotree-mode-map (kbd "A") 'neotree-stretch-toggle)
+(evil-define-key 'normal neotree-mode-map (kbd "H") 'neotree-hidden-file-toggle)
