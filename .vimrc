@@ -41,6 +41,7 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'tpope/vim-surround'
+Plug 'notpratheek/vim-luna'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -74,3 +75,9 @@ endif
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
 let &t_EI.="\e[1 q"
+
+" fix wsltty's display for vim theme
+" ref: https://github.com/microsoft/WSL/issues/1706#issuecomment-280522843
+set term=screen-256color
+set t_ut=
+colorscheme luna-term
