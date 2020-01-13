@@ -42,6 +42,9 @@
 ;; Make TAB work in org mode (should come before (require 'evil))
 ;; ref: https://github.com/Somelauw/evil-org-mode
 (setq evil-want-C-i-jump nil)
+;; Fix C-u binding(should come before (require 'evil))
+;; ref: https://stackoverflow.com/questions/14302171/ctrlu-in-emacs-when-using-evil-key-bindings
+(setq evil-want-C-u-scroll t)
 
 ;; add timestamp for TODO items
 ;; ref: https://orgmode.org/manual/Closing-items.html
