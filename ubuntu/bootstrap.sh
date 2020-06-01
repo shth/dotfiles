@@ -13,3 +13,5 @@ ln -sfnv $PWD/.tmux.conf ~/.tmux.conf
 ln -sfnv $PWD/.vimrc ~/.vimrc
 ln -sfnv $PWD/.zshrc ~/.zshrc
 ln -sfnv $PWD/.emacs ~/.emacs
+chmod a+x $PWD/WSLGitWrapper.sh
+ln -sfnv $PWD/WSLGitWrapper.sh /usr/local/bin/git
