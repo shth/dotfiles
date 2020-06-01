@@ -6,7 +6,7 @@ ARG1=$1
                                                                         
 if [  "${REALPATH:0:5}" == "/mnt/" ]; then                              
   if [ $ARG1 == "log" ]; then                                    
-    git.exe "$@" --color=always | more                                                 
+    git.exe "$@" --color=always | less                                                 
   else                                                                  
     git.exe "$@"                                                        
   fi                                                                    
