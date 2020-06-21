@@ -11,19 +11,22 @@
 ;; auto save settings
 ;; save every 20 characters typed (this is the minimum)
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Save-Control.html#Auto-Save-Control
-(setq auto-save-interval 20)
+(setq auto-save-interval 20
+      auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save/" t))
+      )
 
 ;; backup settings
 ;; https://www.emacswiki.org/emacs/BackupDirectory
 ; https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup-Copying.html#Backup-Copying
 (setq backup-by-copying t      ; don't clobber symlinks
-      backup-directory-alist `(("." . ,(concat user-emacs-directory "backups")))    ; don't litter my fs tree
+      backup-directory-alist `((".*" . ,(concat user-emacs-directory "backups/")))    ; don't litter my fs tree
       ; https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup-Deletion.html#Backup-Deletion
       delete-old-versions t    ; Make emacs delete old versions silently (by default emacs will ask before deletion)
       kept-new-versions 6      ; how many versions from the latest one are kept
       kept-old-versions 2      ; how many versions from the first one are kept 
       ; https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup-Names.html#Backup-Names
       version-control t)       ; use versioned backups
+
 ;; setup chrome browser for opening links
 ;; require BROWSER environment variable to work
 ;; ref: https://stackoverflow.com/questions/25261200/no-usable-browser-found-error-when-using-emacs-to-browse-hyperspec/25261294#25261294
@@ -48,7 +51,7 @@
 ;; (setq org-log-done 'note)
 (setq org-use-fast-todo-selection t)
 (setq org-todo-keywords
-            '((sequence "TODO" "IN_PROGRESS(!/@)" "BLOCKED(b@/!)" "|" "DONE(d@)" "CANCELED(c@)")))
+            '((sequence "TODO" "PENDING(p)" "NEXT(n)" "IN_PROGRESS(!/@)" "BLOCKED(b@/!)" "|" "DONE(d@)" "CANCELED(c@)")))
 ;; custom key maps from:
 ;; https://orgmode.org/manual/Activation.html#Activation
 (global-set-key (kbd "C-c l") 'org-store-link)
@@ -60,7 +63,7 @@
 (setq org-startup-indented t)
 
 (setq org-directory "~/org-mode")
-(setq org-default-notes-file (concat org-directory "/notes.org"))
+(setq org-default-notes-file (concat org-directory "/agenda/inbox.org"))
 ;; make org-goto use completion
 ;; ref: https://emacs.stackexchange.com/questions/32617/how-to-jump-directly-to-an-org-headline/32638
 (setq org-goto-interface 'outline-path-completion)
@@ -100,15 +103,84 @@
 (evil-define-key 'normal neotree-mode-map (kbd "A") 'neotree-stretch-toggle)
 (evil-define-key 'normal neotree-mode-map (kbd "H") 'neotree-hidden-file-toggle)
 
+(setq stephen/org-agenda-directory "~/org-mode/agenda/")
+;; ref: https://orgmode.org/manual/Template-expansion.html#Template-expansion
+(setq org-capture-templates
+            `(("i" "inbox" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+	                "* TODO %?")
+	      ("R" "random thoughts" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* TODO a random thought about %?")
+	      ("c" "consume")
+	      ("ca" "article" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* TODO read article \"%^{title}\"\n[[%^{link}][link]]\n%?" )
+	      ("cv" "video" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* TODO watch video \"%^{title}\"\n[[%^{link}][link]]\n%?" )
+
+	      ("n" "note")
+	      ("na" "article" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* notes about article \"%^{title}\"\n[[%^{link}][link]]\n%?" )
+	      ("nv" "video" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* notes about video \"%^{title}\"\n[[%^{link}][link]]\n%?" )
+	      ("nb" "book" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* notes about book \"%^{title}\"\npage: p.%^{page number}\n%?" )
+	       
+	      ("o" "other people")
+	      ("or" "other people's request" entry (file ,(concat stephen/org-agenda-directory "inbox.org"))
+			"* TODO request from %^{who?}\nrequested on: %t \ndeadline:%^{deadline}t\n\n%?" )
+))
+(setq org-agenda-custom-commands
+    '(
+      (" " "Agenda and Home-related tasks"
+	(
+	;; default agenda view
+	(agenda "")
+	;; inbox
+	(todo "TODO"
+	      ((org-agenda-overriding-header "To Refile")
+	       (org-agenda-skip-function '(org-agenda-skip-if nil '(schedule deadline)))
+	       (org-agenda-files '("~/org-mode/agenda/inbox.org"))
+	       ))
+	;; next actions
+	(todo "NEXT"
+	      ((org-agenda-overriding-header "Projects")
+	       (org-agenda-skip-function '(org-agenda-skip-if nil '(schedule deadline)))
+	       (org-agenda-files '("~/org-mode/agenda/projects.org"))
+	       ))
+        )
+      )
+      ("r" "Reflections"
+	(
+	;; next actions
+	(todo "NEXT"
+	      ((org-agenda-overriding-header "Next actions")
+	       (org-agenda-skip-function '(org-agenda-skip-if nil '(schedule deadline)))
+	       (org-agenda-files '("~/org-mode/agenda/reflections.org"))
+	       ))
+        )
+      )
+     )
+)
+(setq stephen/refile-target-projects "~/org-mode/agenda/projects.org")
+(setq stephen/refile-target-someday "~/org-mode/agenda/someday.org")
+(setq stephen/refile-target-reflections "~/org-mode/agenda/reflections.org")
+(setq org-agenda-files (directory-files "~/org-mode/agenda/" t ".*\.org"))
+ (setq org-refile-targets '((stephen/refile-target-projects :maxlevel . 1)
+			    (stephen/refile-target-someday :maxlevel . 1)
+			    (stephen/refile-target-reflections :maxlevel . 1)
+			    ))
+(add-to-list 'org-modules 'org-habit t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/Projects/notes/notes.org"))))
+ '(org-agenda-files
+   (quote
+    ("/home/stephen/org-mode/agenda/inbox.org" "/home/stephen/org-mode/agenda/projects.org" "/home/stephen/org-mode/agenda/reflections.org" "/home/stephen/org-mode/agenda/someday.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
