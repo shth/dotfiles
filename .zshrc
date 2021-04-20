@@ -84,6 +84,8 @@ plugins=(
   colorize
 )
 
+ZSH_TMUX_AUTOSTART=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
