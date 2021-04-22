@@ -39,3 +39,15 @@ git clone https://github.com/jaypei/emacs-neotree.git ~/.emacs.d/plugin/neotree
 echo "Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+echo "Installing emacs27"
+sudo add-apt-repository ppa:kelleyk/emacs
+sudo apt update
+sudo apt install emacs27
+# required dependencies
+apt-get install git ripgrep
+# optional dependencies
+apt-get install fd-find
+echo "Installing emacs doom"
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d/doom
+~/.emacs.d/doom/bin/doom install

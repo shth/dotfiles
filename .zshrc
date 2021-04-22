@@ -132,6 +132,7 @@ alias gd="git d"
 alias gdca="git d --cached"
 alias zrc='vim ~/.zshrc'
 alias fuckparcel='rm -r .cache/; yarn dev'
+alias lla='ll -a'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -179,3 +180,6 @@ agent_start
 
 unset env
  
+#adding doom to PATH
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
