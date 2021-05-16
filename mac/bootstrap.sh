@@ -12,6 +12,8 @@ mv -ivn ~/.tmux.conf ~/.tmux.conf.default
 mv -ivn ~/.vimrc ~/.vimrc.default
 mv -ivn ~/.zshrc ~/.zshrc.default 
 mv -ivn ~/.emacs ~/.emacs.default 
+mv -ivn ~/.yabairc ~/.yabairc.default 
+mv -ivn ~/.skhdrc ~/.skhdrc.default 
 
 echo "Adding symlinks..." 
 ln -sfnv $PWD/.gitconfig ~/.gitconfig
@@ -20,3 +22,5 @@ ln -sfnv $PWD/.vimrc ~/.vimrc
 ln -sfnv $PWD/.zshrc ~/.zshrc
 ln -sfnv $PWD/libraries/dircolors-solarized/dircolors.256dark ~/dircolors.256dark
 ln -sfnv $PWD/.emacs ~/.emacs
+ln -sfnv $PWD/.yabairc ~/.yabairc
+ln -sfnv $PWD/.skhdrc ~/.skhdrc
