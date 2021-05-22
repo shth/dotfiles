@@ -15,10 +15,11 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 
-# x server for vim to access system clipboard under wsl
-export DISPLAY=localhost:0.0
+# fixing emacs doom error: device 1 is not a termcap terminal device
+# https://emacsredux.com/blog/2020/09/23/using-emacs-on-windows-with-wsl2/
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 
-export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+exportBROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
 ######
 
 # Set name of the theme to load. Optionally, if you set this to "random"
