@@ -13,3 +13,4 @@ ln -sfnv $PWD/.tmux.conf ~/.tmux.conf
 ln -sfnv $PWD/.vimrc ~/.vimrc
 ln -sfnv $PWD/.zshrc ~/.zshrc
 ln -sfnv $PWD/.emacs ~/.emacs
+ln -sfnv $PWD/emacs/doom/config.el ~/.doom.d/config.el
