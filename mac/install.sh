@@ -42,3 +42,16 @@ git clone https://github.com/seebi/dircolors-solarized.git ./libraries/dircolors
 echo "Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+echo "Installing yabai"
+brew install koekeishiya/formulae/yabai
+sudo yabai --install-sa
+sudo yabai --load-sa
+brew services start yabai
+
+echo "Installing skhd"
+brew install koekeishiya/formulae/skhd
+brew services start skhd
+
+# follow instructions
+echo "If you're using macOS Big Sur, follow the instructions here: https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#macos-big-sur---automatically-load-scripting-addition-on-startup"
