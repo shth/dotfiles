@@ -80,4 +80,10 @@
 		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled))))
 	 nil)))
 
-(add-to-list 'org-agenda-custom-commands `,jethro/org-agenda-todo-view)
+(use-package! org-agenda
+	      ;; if you omit :defer, :hook, :commands, or :after, then the package is loaded
+	      ;; immediately. By using :hook here, the `hl-todo` package won't be loaded
+	      ;; until prog-mode-hook is triggered (by activating a major mode derived from
+	      ;; it, e.g. python-mode) 
+	      :config
+	      (add-to-list 'org-agenda-custom-commands `,jethro/org-agenda-todo-view))
