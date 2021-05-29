@@ -80,10 +80,56 @@
 		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled))))
 	 nil)))
 
+(defun shth/my-org-agenda-set-effort (effort)
+  "Set the effort property for the current headline."
+  (interactive
+    (list (read-string (format "Effort [%s]: " shth/org-default-effort) nil nil shth/org-default-effort)))
+  (setq shth/org-default-effort effort)
+  (org-agenda-check-no-diary)
+  (let* ((hdmarker (or (org-get-at-bol 'org-hd-marker)
+		       (org-agenda-error)))
+	 (buffer (marker-buffer hdmarker))
+	 (pos (marker-position hdmarker))
+	 (inhibit-read-only t)
+	 newhead)
+    (org-with-remote-undo buffer
+			  (with-current-buffer buffer
+					       (widen)
+					       (goto-char pos)
+					       (org-show-context 'agenda)
+					       (funcall-interactively 'org-set-effort nil shth/org-default-effort)
+					       (end-of-line 1)
+					       (setq newhead (org-get-heading)))
+			  (org-agenda-change-all-lines newhead hdmarker))))
+
+(defun jethro/org-agenda-process-inbox-item ()
+  "Process a single item in the org-agenda."
+  (org-with-wide-buffer
+    (org-agenda-set-tags)
+    (org-agenda-priority)
+    (call-interactively 'shth/my-org-agenda-set-effort)
+    (org-agenda-refile nil nil t)))
+
+(defvar jethro/org-agenda-bulk-process-key ?Q
+    "Default key for bulk processing inbox items.")
+
+
 (use-package! org-agenda
 	      ;; if you omit :defer, :hook, :commands, or :after, then the package is loaded
 	      ;; immediately. By using :hook here, the `hl-todo` package won't be loaded
 	      ;; until prog-mode-hook is triggered (by activating a major mode derived from
 	      ;; it, e.g. python-mode) 
 	      :config
-	      (add-to-list 'org-agenda-custom-commands `,jethro/org-agenda-todo-view))
+	      (add-to-list 'org-agenda-custom-commands `,jethro/org-agenda-todo-view)
+	      (setq org-agenda-bulk-custom-functions `((,jethro/org-agenda-bulk-process-key jethro/org-agenda-process-inbox-item)))
+	      )
+
+(defvar shth/org-default-effort "1:00"
+  "Current effort for agenda items.")
+
+(use-package! org-capture
+	      :config
+	      (add-to-list 'org-capture-templates
+			   `("i" "inbox" entry (file ,(concat org-directory "inbox.org"))
+			     "* TODO %?"))
+	      )
