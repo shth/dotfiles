@@ -19,7 +19,7 @@ export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 # https://emacsredux.com/blog/2020/09/23/using-emacs-on-windows-with-wsl2/
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 
-exportBROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
 ######
 
 # Set name of the theme to load. Optionally, if you set this to "random"
