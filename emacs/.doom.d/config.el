@@ -113,6 +113,10 @@
 (defvar jethro/org-agenda-bulk-process-key ?Q
     "Default key for bulk processing inbox items.")
 
+(defun jethro/org-inbox-capture ()
+  (interactive)
+  "Capture a task in agenda mode."
+  (org-capture nil "i"))
 
 (use-package! org-agenda
 	      ;; if you omit :defer, :hook, :commands, or :after, then the package is loaded
@@ -122,6 +126,7 @@
 	      :config
 	      (add-to-list 'org-agenda-custom-commands `,jethro/org-agenda-todo-view)
 	      (setq org-agenda-bulk-custom-functions `((,jethro/org-agenda-bulk-process-key jethro/org-agenda-process-inbox-item)))
+	      (define-key org-agenda-mode-map "c" 'jethro/org-inbox-capture)
 	      )
 
 (defvar shth/org-default-effort "1:00"
@@ -130,6 +135,14 @@
 (use-package! org-capture
 	      :config
 	      (add-to-list 'org-capture-templates
-			   `("i" "inbox" entry (file ,(concat org-directory "inbox.org"))
-			     "* TODO %?"))
+			   `("i" "inbox" entry (file ,(concat org-directory "inbox.org")) "* TODO %?"))
 	      )
+
+(use-package! pyim-cangjiedict
+	      :config
+	      (setq default-input-method "pyim")
+	      (setq pyim-page-tooltip 'popup)
+	      (setq pyim-default-scheme 'cangjie)
+	      (pyim-cangjie5dict-enable) ;; 啓用五代詞庫(Enable cangjie5)
+	      )
+
