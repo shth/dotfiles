@@ -56,7 +56,7 @@
 (setq jethro/org-agenda-todo-view
       `(" " "Agenda"
 	((agenda ""
-		 ((org-agenda-span 'day)
+		 ((org-agenda-span 'week)
 		  (org-deadline-warning-days 365)))
 	 (todo "TODO"
 	       ((org-agenda-overriding-header "To Refile")
