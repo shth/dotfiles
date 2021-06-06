@@ -7,9 +7,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-# path for linuxbrew
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
-
 # path for yarn globals
 # export PATH="$(yarn global bin):$PATH"
 
