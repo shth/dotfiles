@@ -4,3 +4,4 @@
 .config/yarn/
 # for containing files from git clone
 libraries/
+*.swp
