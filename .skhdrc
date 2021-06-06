@@ -106,16 +106,24 @@ ctrl + shift + alt - d : yabai -m space --destroy
 ctrl + shift + alt - 0x21 : yabai -m space --move prev
 # ']'
 ctrl + shift + alt - 0x1E : yabai -m space --move next
+# ','
+ctrl + shift + alt - 0x2B : yabai -m space --display 1
+# '.'
+ctrl + shift + alt - 0x2F : yabai -m space --display 2
 
 # focus spaces
 # '['
 ctrl + alt - 0x21 : yabai -m space --focus prev
 # ']'
 ctrl + alt - 0x1E : yabai -m space --focus next
-ctrl + alt - 1 : yabai -m space --focus main
-ctrl + alt - 2 : yabai -m space --focus code
-ctrl + alt - 3 : yabai -m space --focus research
-ctrl + alt - 4 : yabai -m space --focus communication
+ctrl + alt - 7 : yabai -m space --focus main
+ctrl + alt - 8 : yabai -m space --focus code
+ctrl + alt - 9 : yabai -m space --focus research
+ctrl + alt - 0 : yabai -m space --focus communication
+ctrl + alt - u : yabai -m space --focus main-alt
+ctrl + alt - i : yabai -m space --focus code-alt
+ctrl + alt - o : yabai -m space --focus research-alt
+ctrl + alt - p : yabai -m space --focus communication-alt
 
 # focus displays
 # ','
@@ -123,21 +131,18 @@ ctrl + alt - 0x2B : yabai -m display --focus 1
 # '.'
 ctrl + alt - 0x2F : yabai -m display --focus 2
 
-# mark spaces
-ctrl + shift + alt - 1 : yabai -m space --label main
-ctrl + shift + alt - 2 : yabai -m space --label code
-ctrl + shift + alt - 3 : yabai -m space --label research
-ctrl + shift + alt - 4 : yabai -m space --label communication
-
 # move windows to spaces
-ctrl + shift + cmd - 1 : yabai -m window --space main
-ctrl + shift + cmd - 2 : yabai -m window --space code
-ctrl + shift + cmd - 3 : yabai -m window --space research
-ctrl + shift + cmd - 4 : yabai -m window --space communication
+ctrl + shift + cmd - 7 : yabai -m window --space main
+ctrl + shift + cmd - 8 : yabai -m window --space code
+ctrl + shift + cmd - 9 : yabai -m window --space research
+ctrl + shift + cmd - 0 : yabai -m window --space communication
 
 # toggle layout
 ctrl + shift + alt - f : yabai -m space --layout float
 ctrl + shift + alt - b : yabai -m space --layout bsp
+
+# toggle zoom
+ctrl + shift + alt - m : yabai -m window --toggle zoom-fullscreen
 
 # balance size of windows
 # shift + alt - 0 : yabai -m space --balance
