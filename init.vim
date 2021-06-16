@@ -55,5 +55,15 @@ if exists('g:vscode')
   noremap <C-l> :call VSCodeNotify("workbench.action.navigateRight")<CR>
   noremap <C-k> :call VSCodeNotify("workbench.action.navigateUp")<CR>
   noremap <C-j> :call VSCodeNotify("workbench.action.navigateDown")<CR>
+
+  " avoid opening folds when step over it
+  nmap j gj
+  nmap k gk
+
+  " remap vim's folding commands to VSCode actions
+  nmap zC :call VSCodeNotify("editor.foldAll")<CR>
+  nmap zc :call VSCodeNotify("editor.fold")<CR>
+  nmap zo :call VSCodeNotify("editor.unfold")<CR>
+  
 else
 endif
