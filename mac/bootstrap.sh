@@ -24,3 +24,6 @@ ln -sfnv $PWD/libraries/dircolors-solarized/dircolors.256dark ~/dircolors.256dar
 ln -sfnv $PWD/.emacs ~/.emacs
 ln -sfnv $PWD/.yabairc ~/.yabairc
 ln -sfnv $PWD/.skhdrc ~/.skhdrc
+mkdir ~/.config/nvim
+ln -sfnv $PWD/init.vim ~/.config/nvim/init.vim
+
