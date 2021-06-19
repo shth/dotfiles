@@ -73,11 +73,13 @@
 	 (todo "TODO"
 	       ((org-agenda-overriding-header "Projects")
 		(org-agenda-files '(,(concat org-directory "projects.org")))
+		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled 'timestamp))
 		))
 	 (todo "TODO"
 	       ((org-agenda-overriding-header "One-off Tasks")
 		(org-agenda-files '(,(concat org-directory "next.org")))
-		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled))))
+		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled 'timestamp))
+		))
 	 nil)))
 
 (defun shth/my-org-agenda-set-effort (effort)
