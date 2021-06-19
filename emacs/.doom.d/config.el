@@ -136,6 +136,7 @@
 		      ""
 		      )
 		    )
+	      (setq org-columns-default-format "%25ITEM %TODO %3PRIORITY %6Effort(Estim){:}")
 	      )
 
 (defvar shth/org-default-effort "1:00"
@@ -158,3 +159,4 @@
 (setq browse-url-generic-program 
           (executable-find (getenv "BROWSER")) 
 	       browse-url-browser-function 'browse-url-generic)
+
