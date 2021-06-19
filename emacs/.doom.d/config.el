@@ -71,6 +71,11 @@
 				     ,(concat org-directory "next.org")))
 		))
 	 (todo "TODO"
+	       ((org-agenda-overriding-header "Areas")
+		(org-agenda-files '(,(concat org-directory "areas.org")))
+		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled 'timestamp))
+		))
+	 (todo "TODO"
 	       ((org-agenda-overriding-header "Projects")
 		(org-agenda-files '(,(concat org-directory "projects.org")))
 		(org-agenda-skip-function '(org-agenda-skip-entry-if 'deadline 'scheduled 'timestamp))
@@ -120,6 +125,11 @@
   "Capture a task in agenda mode."
   (org-capture nil "i"))
 
+(after! org
+	:config
+	(add-to-list 'org-todo-keywords '(sequence "AREA(a)" "|" "DONE_AREA(A)"))
+	)
+
 (use-package! org-agenda
 	      ;; if you omit :defer, :hook, :commands, or :after, then the package is loaded
 	      ;; immediately. By using :hook here, the `hl-todo` package won't be loaded
@@ -130,7 +140,7 @@
 	      (setq org-agenda-bulk-custom-functions `((,jethro/org-agenda-bulk-process-key jethro/org-agenda-process-inbox-item)))
 	      (define-key org-agenda-mode-map "c" 'jethro/org-inbox-capture)
 	      (setq org-stuck-projects
-		    '("/+PROJ-DONE"
+		    '("/+PROJ-DONE|AREA-DONE_AREA"
 		      ("TODO")
 		      nil
 		      ""
