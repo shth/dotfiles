@@ -127,6 +127,13 @@
 	      (add-to-list 'org-agenda-custom-commands `,jethro/org-agenda-todo-view)
 	      (setq org-agenda-bulk-custom-functions `((,jethro/org-agenda-bulk-process-key jethro/org-agenda-process-inbox-item)))
 	      (define-key org-agenda-mode-map "c" 'jethro/org-inbox-capture)
+	      (setq org-stuck-projects
+		    '("/+PROJ-DONE"
+		      ("TODO")
+		      nil
+		      ""
+		      )
+		    )
 	      )
 
 (defvar shth/org-default-effort "1:00"
