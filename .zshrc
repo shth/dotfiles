@@ -7,9 +7,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-# path for linuxbrew
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
-
 # path for yarn globals
 # export PATH="$(yarn global bin):$PATH"
 
@@ -117,7 +114,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ggraph="git log --all --decorate --oneline --graph"
+alias ggraph="glola"
 alias gcfu="git commit --fixup"
 alias a="alias"
 alias yt="yarn test"
