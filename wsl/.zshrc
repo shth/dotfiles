@@ -4,3 +4,4 @@ source ~/dotfiles/.zshrc
 # change the username accordingly
 export WINDOW_USER_PATH="/mnt/c/Users/shthf"
 
+export BROWSER="/mnt/c/Program Files/Mozilla Firefox/firefox.exe"

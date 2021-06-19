@@ -13,8 +13,6 @@ export ZSH=~/.oh-my-zsh
 export PATH="/usr/local/Cellar/git/2.22.0_1:$PATH"
 
 export DISPLAY=localhost:0.0
-
-export BROWSER="/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
 ######
 
 # Set name of the theme to load. Optionally, if you set this to "random"
