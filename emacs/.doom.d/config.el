@@ -153,3 +153,6 @@
 	      (pyim-cangjie5dict-enable) ;; 啓用五代詞庫(Enable cangjie5)
 	      )
 
+(setq browse-url-generic-program 
+          (executable-find (getenv "BROWSER")) 
+	       browse-url-browser-function 'browse-url-generic)
