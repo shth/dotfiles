@@ -58,7 +58,7 @@
 	((agenda ""
 		 ((org-agenda-span 'week)
 		  (org-deadline-warning-days 365)))
-	 (todo "TODO"
+	 (todo "*"
 	       ((org-agenda-overriding-header "To Refile")
 		(org-agenda-files '(,(concat org-directory "inbox.org")))))
 	 (todo "TODO"
